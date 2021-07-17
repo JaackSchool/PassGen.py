@@ -42,6 +42,13 @@ def Copy_password():
     pyperclip.copy(pass_str.get())
 
 Button(app, text = "Copy your password to clipboard", command = Copy_password).pack(pady=5)
+
+##Function and button to save the password to a word document
+def Save_password():
+    document.add_paragraph(pass_str.get())
+    document.save('password.docx')
+
+Button(app, text = "Save your password in a document", command = Save_password).pack(pady=5)
  
 
 
