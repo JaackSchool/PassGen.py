@@ -12,6 +12,6 @@ This generator uses tkinter to create a simple window with buttons. The program 
   
   .Customise file names for your document
 
-This was constructed in 58 minutes using the tkinter docs ( tkdocs.com ) and an outdated partially put together python 2 password gen tutorial...
+
 
 
