@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 import random, string 
-import pyperclip 
+import pyperclip
+import os
 ##Sets up window
 app = Tk() 
 app.geometry("400x400")
