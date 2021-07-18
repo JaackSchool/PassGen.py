@@ -5,8 +5,11 @@ This generator uses tkinter to create a simple window with buttons. The program 
 
 # Features:
   .Select your own password length using a spinbox
+  
   .Copy your password to your clipboard
+  
   .Create a document with your password saved in it
+  
   .Customise file names for your document
 
 This was constructed in 58 minutes using the tkinter docs ( tkdocs.com ) and an outdated partially put together python 2 password gen tutorial...
