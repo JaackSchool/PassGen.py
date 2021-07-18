@@ -8,8 +8,7 @@ app.geometry("400x400")
 app.resizable(0,0)
 app.title("Jack Sweeney - Strong password generator. ")
 
-##makes window look pretty
-mainframe = ttk.Frame(app, padding="3 3 12 12")
+
 
 
 ##Sets up the title text at the top, and the subtitle text at the bottom
@@ -45,8 +44,13 @@ Button(app, text = "Copy your password to clipboard", command = Copy_password).p
 
 ##Function and button to save the password to a word document
 def Save_password():
-    document.add_paragraph(pass_str.get())
-    document.save('password.docx')
+    documentName = input("What would you like your document to be called?")
+    if os.path.isfile('./' + documentName + '.docx') == True:
+        print("Filename already in use! Please try again")
+        Save_password()
+    else:
+        document.add_paragraph(pass_str.get())
+        document.save(documentName + '.docx')
 
 Button(app, text = "Save your password in a document", command = Save_password).pack(pady=5)
  
